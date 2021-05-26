@@ -19,8 +19,6 @@ System::Void BallisticGame::GameForm::GamePictureBox_Paint(System::Object^ sende
 	graphics->Clear(Color::White);
 	leftBallista->draw(graphics);
 	rightBallista->draw(graphics);
-	// leftBallista->shoot(graphics, rightBallista->getX(), rightBallista->getY());
-	// rightBallista->shoot(graphics, leftBallista->getX(), leftBallista->getY());
 }
 
 System::Void BallisticGame::GameForm::AngleTrackBarLeftPlayer_Scroll(System::Object^ sender, System::EventArgs^ e)
