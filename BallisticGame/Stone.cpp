@@ -31,7 +31,7 @@ int BallisticGame::Stone::getSpeed()
 void BallisticGame::Stone::setSpeed(int speed)
 {
     if (speed > 150 || speed <= 0)
-        throw gcnew System::ArgumentException("Speed should be more than 0 and less than 30");
+        throw gcnew System::ArgumentException("Speed should be more than 0 and less than 150");
     this->Speed = speed;
 }
 
@@ -43,7 +43,7 @@ int BallisticGame::Stone::getMass()
 void BallisticGame::Stone::setMass(int mass)
 {
     if (mass > 100 || mass <= 0)
-        throw gcnew System::ArgumentException("Mass should be more than 0 and less than 50");
+        throw gcnew System::ArgumentException("Mass should be more than 0 and less than 100");
     this->Mass = mass;
 }
 
